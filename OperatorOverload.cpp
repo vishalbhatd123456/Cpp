@@ -11,7 +11,7 @@ public:
         real = r;
         img = i;
     }
-    Complex add(Complex x)
+    Complex operator+(Complex x)
     {
         Complex temp;
         temp.real = real + x.real;
@@ -26,9 +26,10 @@ public:
     Complex c1(2,3);
     Complex c2(-1,2);
     Complex c3;
-    c3 = c1.add(c2);
-    cout<<c3.real<<"  "<<c3.img<<"  ";
-    return 0;
+    //c3 = c1.add(c2);
+    cout<<c1.real+c2.real<<endl;
+    cout<<c1.img+c2.img;
+
 
 }
 
